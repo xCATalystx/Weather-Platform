@@ -145,7 +145,7 @@ const app = Vue.createApp({
       .then(res => this.countyWxData = res["records"].location);
 
       // fetch各縣市id
-      let countyId = fetch("twMapId.json")
+      let countyId = fetch("https://mocki.io/v1/fdfea774-a5f4-45f9-a02c-3a9865abb76c")
         .then(res => res.json())
         .then(res => this.countyId = res);
 
