@@ -66,7 +66,7 @@
       <div class="mapTheme">
           <div class="mapWrap">
               <div class="infoDate">
-                  <p><i class="far fa-calendar-alt"></i> {{ countyWxInfo[0].date[0] }} / {{ countyWxInfo[0].date[1] }} / {{ countyWxInfo[0].date[2] }}</p>
+                  <p><i class="far fa-calendar-alt"></i> {{ countyWxInfo[0]?.date[0] }} / {{ countyWxInfo[0]?.date[1] }} / {{ countyWxInfo[0]?.date[2] }}</p>
               </div>
               <div v-for="s in countyWxInfo" class="weatherData">
                   <a href="javascript:void(0)" :title="s.county+'：'+s.wx" class="iconZone" :name="s.id" :value="s.value">
